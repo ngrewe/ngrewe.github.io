@@ -21,3 +21,26 @@
 {% if page.comments %}
   {% include _disqus_comments.html %}
 {% endif %}
+<script type="text/javascript" src="{{ site.url }}/assets/js/plugins/jquery.socialshareprivacy.min.js"></script>
+<script type="text/javascript">
+jQuery(document).ready(function($){
+     if($('#socialshareprivacy').length > 0){
+        $('#socialshareprivacy').socialSharePrivacy({
+          "css_path"  : "{{ site.url }}/assets/js/plugins/socialshareprivacy/socialshareprivacy.css",
+          "lang_path" : "{{ site.url }}/assets/js/plugins/socialshareprivacy/lang/",
+          "language"  : "en",
+          'services' : {
+  'facebook' : {
+    'dummy_img' : '{{ site.url }}/images/dummy_facebook_en.png',
+  },
+  'twitter' : {
+    'dummy_img' : '{{ site.url }}/images/dummy_twitter.png',
+  },
+  'gplus' : {
+    'dummy_img' : '{{ site.url }}/images/dummy_gplus.png',
+  }
+},
+        });
+      }
+    });
+  </script>

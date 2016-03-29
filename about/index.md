@@ -1,25 +1,27 @@
 ---
 layout: page
-title: About the Theme
-tags: [about, Jekyll, theme, responsive]
-modified: 2014-08-08T20:53:07.573882-04:00
-comments: true
+title: About me
+tags: [about, Niels, personal]
+modified: 2016-03-28T20:23:49+0200
+comments: false
 image:
-  feature: sample-image-2.jpg
-  credit: WeGraphics
-  creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
+  feature: porphyriana.jpg
+  credit:  Franz Georg Hermann the Younger [Public domain] via Wikimedia Commons
+  creditlink: https://upload.wikimedia.org/wikipedia/commons/7/73/Schussenried_Kloster_Bibliothekssaal_Gew%C3%B6lbefresko_Baum_des_Porphyrius.jpg
 ---
 
-Minimal Mistakes is responsive Jekyll theme with large featured images and solid typography. As the name implies the styling is fairly minimal to make it easier for you to build on top of.
+I'm a software developer living at the lovely Baltic coast of Germany. In other
+aspects of my life, I'm also a classicist (so greek letters don't scare me even
+if they don't denote variables…) and a philosopher (which gives me
+license to get excited about any topic, no matter how obscure).
 
-## Minimal Mistakes is all about:
+In the software theatre, my main areas of interest currently include distributed
+systems, language interoperability, as well as deployment and automation. I enjoy
+working with a variety of different languages and technologies, but I'm particularly
+fond of Objective-C – down to the nitty-gritty runtime details.
 
-* Responsive templates. Looking good on mobile, tablet, and desktop.
-* Gracefully degrading in older browsers. Compatible with Internet Explorer 8+ and all modern browsers.
-* Minimal embellishments -- content first.
-* Optional large feature images for posts and pages.
-* Simple and clear permalink structure.
-* [Custom 404 page](http://mmistakes.github.io/minimal-mistakes/404.html) to get you started.
-* Support for Disqus Comments
+<h4>Philosophical interests</h4>
 
-<a markdown="0" href="{{ site.url }}/theme-setup" class="btn">Install Minimal Mistakes Theme</a>
+* Plato and Aristotle, as well as their ancient and medieval commentators.
+* Metaphysics and (Formal) Ontology
+* Logic (especially paraconsistent logic and proof theory)

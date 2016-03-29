@@ -1,13 +1,13 @@
 # Site wide configuration
 
-title:            Site Title
-locale:           en_US
+title:            silva porphyriana
+locale:           en_UK
 url:
 
 
 # Jekyll configuration
 
-permalink:   /:categories/:title/
+permalink:   /:year/:month/:day/:title/
 markdown:    kramdown
 highlighter: rouge
 sass:
@@ -16,6 +16,7 @@ sass:
 gems:
   - jekyll-sitemap
   - jekyll-gist
+  - jekyll/scholar
 
 kramdown:
   auto_ids: true
@@ -41,12 +42,12 @@ titlecase: true
 
 # Site owner
 owner:
-  name: Your Name
-  avatar: bio-photo.jpg
-  bio: "Describe your self."
+  name: Niels Grewe
+  avatar: bio-photo-3.jpg
+  bio: "☐software developer, ☐philosopher, ☐classicist, ☒all of the above."
   email:
   disqus-shortname:
-  twitter: #username
+  twitter: niegrew
   facebook: #username
   google:
     plus: #username
@@ -55,9 +56,9 @@ owner:
     ad-client:
     ad-slot:
   bing-verify:
-  github: #username
+  github: ngrewe
   stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
-  linkedin: #username
+  linkedin: ngrewe
   xing: #username
   instagram: #username
   lastfm: #username
