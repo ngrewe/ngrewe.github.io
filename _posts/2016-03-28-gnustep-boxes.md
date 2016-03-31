@@ -3,11 +3,13 @@ layout: post
 title: "Virtual GNUstep Development Environments"
 comments: true
 category: "Software Development"
+excerpt: Objective-C is not just a language for the Apple world, but you might need some help getting started on an alternative platform.
+modified: 2016-03-31T10:08:00+0200
 tags: [ "GNUstep", "Vagrant", "Docker", "Packer.io" ]
 ---
 
-GNUstep is an open-source implementation of the Cocoa and NeXTStep development
-environments that runs on a variety of \*nix systems as well as on Windows. In
+GNUstep is an open-source implementation of the Cocoa development
+environment that runs on a variety of \*nix systems as well as on Windows. In
 the past weeks I've been working on a build pipeline for virtualised GNUstep dev
 environments, and here's why.
 
