@@ -184,7 +184,7 @@ that no instance variables are exposed in the headers.
 This is a bit of a dogfooding exercise: Quite some time back, I implemented
 support for (compile-time) pluggable sorting algorithms in the gnustep-base
 (Foundation) library. One of the reasons for that was that different parts of
-the codebase where actually using different algorithms (quicksort and
+the codebase were actually using different algorithms (quicksort and
 shellsort) and it made a lot of sense to unify that. But the pièce de résistance
 of that work was the implementation of the
 [timsort](https://en.wikipedia.org/wiki/Timsort) algorithm, which is also used
@@ -206,7 +206,7 @@ applications starting it themselves at random times.
 
 The built-in look of GNUstep is very reminiscent of NeXTStep, and it's quite
 often the subject of intense debate on the GNUstep mailing lists. My
-impression is that most casual users judge it to be to heavy duty, industrial,
+impression is that most casual users judge it to be too heavy duty, industrial,
 or utilitarian. Fortunately, GNUstep is fully themable, so the boxes come with
 the [Rik theme](https://github.com/AlessandroSangiuliano/rik.theme), which
 provides a much ligher look.
