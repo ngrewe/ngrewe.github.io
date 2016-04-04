@@ -19,20 +19,19 @@ easily be done (part of the configuration is loosely based on
 I build a new docker image  for this:
 It just installs the openvpn package, cleans up and provides an attachment point
 for the  volume where we will store the configuration:
-{% highlight dockerfile %}
-FROM debian:jessie
-MAINTAINER foo@example.com
-RUN export DEBIAN_FRONTEND='noninteractive' && \
-    apt-get update -qq && \
-    apt-get install -qqy --no-install-recommends openvpn \
-                $(apt-get -s dist-upgrade|awk '/^Inst.*ecurity/ {print $2}') &&\
-    apt-get clean && \
-    rm -rf /var/lib/apt/lists/* /tmp/*
 
-VOLUME ["/vpn"]
-ENTRYPOINT ["openvpn"]
-CMD [ "--config", "/vpn/vpn.conf" ]
-{% endhighlight %}
+    FROM debian:jessie
+    MAINTAINER foo@example.com
+    RUN export DEBIAN_FRONTEND='noninteractive' && \
+        apt-get update -qq && \
+        apt-get install -qqy --no-install-recommends openvpn \
+                    $(apt-get -s dist-upgrade|awk '/^Inst.*ecurity/ {print $2}') &&\
+                    apt-get clean && \
+                    rm -rf /var/lib/apt/lists/* /tmp/*
+
+    VOLUME ["/vpn"]
+    ENTRYPOINT ["openvpn"]
+    CMD [ "--config", "/vpn/vpn.conf" ]
 
 ### Add a systemd unit
 
